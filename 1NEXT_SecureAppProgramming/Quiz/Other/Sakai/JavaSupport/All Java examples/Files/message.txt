@@ -1,0 +1,4 @@
+Hello
+-1
+23.6
+Hello World !

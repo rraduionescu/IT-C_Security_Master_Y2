@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ro-RO">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Tutorial Java 6 - Continut | IT&amp;C Solutions</title>
+
+<link rel="alternate" type="application/rss+xml" title="IT&amp;C Solutions RSS Feed" href="http://www.itcsolutions.eu/feed/" />
+<link rel="alternate" type="application/atom+xml" title="IT&amp;C Solutions Atom Feed" href="http://www.itcsolutions.eu/feed/atom/" />
+<link rel="pingback" href="http://www.itcsolutions.eu/xmlrpc.php" />
+<link rel="shortcut icon" href="http://www.itcsolutions.eu/wp-content/themes/fusion/favicon.ico" />
+
+<style type="text/css" media="all">
+@import "http://www.itcsolutions.eu/wp-content/themes/fusion/style.css";
+</style>
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript">
+/* <![CDATA[ */
+   blankimgpath = 'http://www.itcsolutions.eu/wp-content/themes/fusion/images/blank.gif';
+ /* ]]> */
+</script>
+<style type="text/css" media="screen">
+  @import "http://www.itcsolutions.eu/wp-content/themes/fusion/ie6.css";
+  body{ behavior:url("http://www.itcsolutions.eu/wp-content/themes/fusion/js/ie6hoverfix.htc"); }
+  img{ behavior: url("http://www.itcsolutions.eu/wp-content/themes/fusion/js/ie6pngfix.htc"); }
+</style>
+<![endif]-->
+
+
+  
+<link rel="alternate" type="application/rss+xml" title="IT&amp;C Solutions &raquo; Tutorial Java 6 &#8211; Continut Comments Feed" href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/feed/" />
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-content/plugins/jquery-lightbox-balupton-edition/scripts/jquery.lightbox.min.js?ver=1.4.9'></script>
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-content/plugins/jquery-lightbox-balupton-edition/scripts/jquery.lightbox.plugin.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://www.itcsolutions.eu/wp-content/themes/fusion/js/fusion.js?ver=3.2.1'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.2
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.itcsolutions.eu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.itcsolutions.eu/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='IT&amp;C Solutions' href='http://www.itcsolutions.eu/' />
+<link rel='start' title='Crearea unei baze de date in Microsoft Access 2003' href='http://www.itcsolutions.eu/2009/05/25/crearea-unei-baze-de-date-in-microsoft-access-2003/' />
+<link rel='prev' title='Tutorial Java 6 – #2 Concepte de baza' href='http://www.itcsolutions.eu/2010/12/15/tutorial-java-2-concepte-de-baza/' />
+<link rel='next' title='Tutorial Java 6 &#8211; #3 Definire variabile de tip primitiv' href='http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-3-definire-variabile-de-tip-primitiv/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='shortlink' href='http://www.itcsolutions.eu/?p=1865' />
+
+<!-- All in One SEO Pack 1.6.13.3 by Michael Torbert of Semper Fi Web Design[301,367] -->
+<meta name="description" content="Tutorialul Java 6 este structurat astfel incat sa acopere toate notiunile importante si sa ii permita unui programator sa invete elementele de sintaxa si conceptele limbajului Java." />
+<meta name="keywords" content="java,scjp,tutorial" />
+<link rel="canonical" href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" />
+<!-- /all in one seo pack -->
+      
+<script type="text/javascript">jQuery(function($) {
+  $.Lightbox.construct({
+  });
+});</script>
+      <!-- This site is powered by Tweet, Like, Plusone and Share Plugin - http://letusbuzz.com/tweet-share-like-plusone/ -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Tutorial Java 6 &#8211; Continut" />
+	<meta property="og:url" content="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/"/>
+	<style type="text/css">div.socialicons{float:left;display:block;margin-right: 10px;}div.socialicons p{margin-bottom: 0px !important;margin-top: 0px !important;padding-bottom: 0px !important;padding-top: 0px !important;}</style>
+
+	<script type="text/javascript">
+	<!--
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	//-->
+	</script>
+	
+<link rel="stylesheet" href="http://www.itcsolutions.eu/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+<!-- multilingual website powered with xili-language v. 2.2.1 WP plugin of dev.xiligroup.com -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+ jQuery(document).ready(function(){
+  // body .safari class
+  if (jQuery.browser.safari) jQuery('body').addClass('safari');
+
+  // layout controls
+     jQuery("#layoutcontrol a").click(function() {
+     switch (jQuery(this).attr("class")) {
+	   case 'setFont' : setFontSize();	break;
+	   case 'setLiquid'	: setPageWidth();	break;
+	 }
+	 return false;
+    });
+   // set the font size from cookie
+   var font_size = jQuery.cookie('fontSize');
+   if (font_size == '.7em') { jQuery('body').css("font-size",".7em"); }
+   if (font_size == '.95em') { jQuery('body').css("font-size",".95em"); }
+   if (font_size == '.8em') { jQuery('body').css("font-size",".8em"); }
+
+   // set the page width from cookie
+   var page_width = jQuery.cookie('pageWidth');
+   if (page_width) jQuery('#page').css('width', page_width);
+  
+  jQuery('#secondary-tabs').minitabs(333, 'slide');
+
+  if (document.all && !window.opera && !window.XMLHttpRequest && jQuery.browser.msie) { var isIE6 = true; }
+  else { var isIE6 = false;} ;
+  jQuery.browser.msie6 = isIE6;
+  if (!isIE6) {
+    initTooltips({
+		timeout: 6000
+   });
+  }
+  tabmenudropdowns();
+
+  // some jquery effects...
+  jQuery('#sidebar ul.nav li ul li a').mouseover(function () {
+   	jQuery(this).animate({ marginLeft: "4px" }, 100 );
+  });
+  jQuery('#sidebar ul.nav li ul li a').mouseout(function () {
+    jQuery(this).animate({ marginLeft: "0px" }, 100 );
+  });
+  // scroll to top
+  jQuery("a#toplink").click(function(){
+    jQuery('html').animate({scrollTop:0}, 'slow');
+  });
+
+ });
+
+ /* ]]> */
+</script>
+
+</head>
+<body class="tutorial-java-6-continut">
+  <!-- page wrappers (100% width) -->
+  <div id="page-wrap1">
+    <div id="page-wrap2">
+      <!-- page (actual site content, custom width) -->
+      <div id="page" class="with-sidebar">
+
+       <!-- main wrapper (side & main) -->
+       <div id="main-wrap">
+        <!-- mid column wrap -->
+    	<div id="mid-wrap">
+          <!-- sidebar wrap -->
+          <div id="side-wrap">
+            <!-- mid column -->
+    	    <div id="mid">
+              <!-- header -->
+              <div id="header">
+                <div id="topnav" class="description"> Solutions and tutorials for IT&amp;C development</div>
+
+                                <a id="logo" href="http://www.itcsolutions.eu/"><img src="http://www.itcsolutions.eu/wp-content/themes/fusion/upload/logo.png" title="IT&amp;C Solutions" alt="IT&amp;C Solutions" /></a>
+                
+                <!-- top tab navigation -->
+                <div id="tabs">
+                 <ul>
+                                     <li id="nav-homelink"><a href="http://www.itcsolutions.eu" title="Click for Home"><span><span>Home</span></span></a></li>
+                                   <li class="page_item page-item-843"><a href="http://www.itcsolutions.eu/post-index/" title="Post index"><span><span>Posts list</span></span></a></li>
+<li class="page_item page-item-2"><a href="http://www.itcsolutions.eu/about/" title="About"><span><span>About</span></span></a></li>
+                 </ul>
+                </div>
+                <!-- /top tabs -->
+
+              </div><!-- /header -->
+
+  <!-- mid content -->
+  <div id="mid-content">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8545818972391308";
+/* 468x60, creat 23.11.2009 */
+google_ad_slot = "3607480323";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+      <div class="navigation">
+      <div class="alignleft">&laquo; <a href="http://www.itcsolutions.eu/2010/12/15/tutorial-java-2-concepte-de-baza/" rel="prev">Tutorial Java 6 – #2 Concepte de baza</a></div>
+      <div class="alignright"><a href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-3-definire-variabile-de-tip-primitiv/" rel="next">Tutorial Java 6 &#8211; #3 Definire variabile de tip primitiv</a> &raquo;</div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="post-1865" class="post-1865 post type-post status-publish format-standard hentry category-java tag-java">
+       <h2>Tutorial Java 6 &#8211; Continut</h2>       
+       
+<span class="comment">
+<a href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/#comments">24 comments</a>
+ 
+</span>
+ - 
+<small>This post in <a href='http://www.itcsolutions.eu/2010/12/22/tutorial-java-6-contents/' >english</a></small>
+
+
+       <br />
+	   <div class="entry">
+          <div class="postbody entry clearfix">
+	       <div class="social4i" style="height:69px;">
+<div class="social4in" style="height:69px;float: left;">
+<div class="socialicons s4twitter" style="float:left;margin-right: 10px;background:url(&quot;http://goo.gl/zjqd1&quot;) no-repeat;"><a href="http://twitter.com/share" data-url="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" data-counturl="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" data-text="Tutorial Java 6 &#8211; Continut" class="twitter-share-button" data-count="vertical" data-via=""></a></div>
+<div class="socialicons s4fblike" style="float:left;margin-right: 10px;">
+<div id="fb-root"></div>
+<p><fb:like href="http%3A%2F%2Fwww.itcsolutions.eu%2F2010%2F12%2F21%2Ftutorial-java-6-continut%2F" send="false" layout="box_count" width="55" height="62" show_faces="false" font=""></fb:like></div>
+<div class="socialicons s4plusone" style="float:left;margin-right: 10px;"><g:plusone size="tall" href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" count="true"></g:plusone></div>
+<div class="socialicons s4fbshare" style="position: relative;height: 61px;width:61px;background:url(&quot;http://goo.gl/qt6Vu&quot;) no-repeat;float:left;margin-right: 10px;">
+<div class="s4ifbshare" style="position: absolute; bottom: 0pt;"><a name="fb_share" type="box_count" share_url="http%3A%2F%2Fwww.itcsolutions.eu%2F2010%2F12%2F21%2Ftutorial-java-6-continut%2F" href="http://www.facebook.com/sharer.php"></a></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<p>Tutorialul Java 6 este structurat astfel incat sa acopere toate notiunile importante si sa ii permita unui programator sa invete elementele de sintaxa si conceptele limbajului Java. De asemenea,articolele insista si pe acele elemente importante care se regasesc in testul pentru certificarea SCJP.</p>
+<p><span id="more-1865"></span></p>
+<h2><a title="Tutorial Java 6 – #1 Premise" href="http://www.itcsolutions.eu/2010/11/29/tutorial-java-1-premise/" target="_blank">1. </a><a title="Tutorial Java 6 – #1 Premise" href="http://www.itcsolutions.eu/2010/11/29/tutorial-java-1-premise/" target="_blank">Tutorial Java 6 – #1 Premise</a></h2>
+<p>Aceasta serie de tutoriale, care incepe cu acest post, are ca obiectiv sintetizarea elementelor  limbajului Java 1.6 pentru invatarea programarii orientate obiect (POO) in limbajul Java 1.6.</p>
+<h2>2. <a title="Tutorial Java 6 – #2 Concepte de baza" href="http://www.itcsolutions.eu/2010/12/15/tutorial-java-2-concepte-de-baza/" target="_blank">Tutorial Java 6 – #2 Concepte de baza</a></h2>
+<p>În acest post sunt prezentate regulile de baza, componentele si structura programelor Java.</p>
+<p>2.1 <a href="http://www.itcsolutions.eu/2010/12/23/tutorial-java-6-2-1-cum-sa-definesti-comentarii-javadoc/">Tutorial Java 6 – #2.1 Cum sa definesti comentarii JavaDoc</a></p>
+<p>In acest post sunt prezentate regulile de editare a comentariilor care sa permite generarea autoamata a documentatiei de tip JavaDoc.</p>
+<p>2.2 <a title="Tutorial Java 6 – #2.2 Cum sa generezi JavaDoc in Eclipse sau NetBeans" href="http://www.itcsolutions.eu/2010/12/23/tutorial-java-6-2-2-cum-sa-generezi-javadoc-in-eclipse-sau-netbeans/" target="_blank">Tutorial Java 6 – #2.2 Cum sa generezi JavaDoc in Eclipse sau NetBeans</a></p>
+<p>In acest post sunt prezentate posibilitatile de generare autoamata a documentatiei de tip JavaDoc in Eclipse sau NetBeans.</p>
+<h2>3. <a title="Tutorial Java 6 – #3 Definire variabile de tip primitiv" href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-3-definire-variabile-de-tip-primitiv/" target="_blank">Tutorial Java 6 – #3 Definire variabile de tip primitiv</a></h2>
+<p>In acest tutorial Java 6 vom vedea care sunt tipurile primitive de date, cum se definesc variabile, care sunt valorile implicite si ce nume putem da acestor variabile.</p>
+<h2>4. <a href="http://www.itcsolutions.eu/2010/12/24/tutorial-java-6-4-vectori/">Tutorial Java 6 – #4 Vectori</a></h2>
+<p>In acest topic vom vedea cum definim si cum prelucram structuri de date de tip vector sau matrice in Java.</p>
+<p>4.1 <a href="http://www.itcsolutions.eu/2010/12/24/tutorial-java-4-1-cum-se-adauga-in-java-un-element-nou-la-un-vector-existent/">Tutorial Java – #4.1 Cum se adauga in Java un element nou la un vector existent</a></p>
+<p>In acest post vedem care este solutia la problema adaugarii unui element nou la un vector existent.</p>
+<p>4.2 <a href="http://www.itcsolutions.eu/2010/12/27/tutorial-java-4-2-cum-se-copiaza-in-java-elementele-unui-vector-in-alt-vector/">Tutorial Java – #4.2 Cum se copiaza in Java elementele unui vector in alt vector</a></p>
+<p>In acest post sunt descrise modalitatile prin care se poate copia un vector in alt vector, la nivel de valori.</p>
+<p>4.3 <a title="Tutorial Java – #4.3 Matrice si masive multidimensionale" href="http://www.itcsolutions.eu/2010/12/30/tutorial-java-6-4-3-matrixes-and-multidimensional-arrays/" target="_blank">Tutorial Java – #4.3 Matrice si masive multidimensionale</a> (numai in Engleza pentru moment)</p>
+<p>In acest post sunt descrise solutii de implementare in Java a structurilor de date de tip matrice si masive multidimensionale.</p>
+<h2>5. <a href="http://www.itcsolutions.eu/2011/01/02/tutorial-java-6-5-structuri-de-control/">Tutorial Java 6 – #5 Structuri de control</a></h2>
+<p>In acest este descris cum se implementeaza in Java, structurile de control fundamentale:</p>
+<ul>
+<li>structuri decizionale: if – then, if – then – else,switch</li>
+<li>structuri de ciclare  for, do-while,while – do, for imbunatatit (enhanced – for)</li>
+<li>instructiuni de control: break, continue;</li>
+</ul>
+<h2>6. <a href="http://www.itcsolutions.eu/2011/01/02/tutorial-java-6-6-clase-si-obiecte/">Tutorial Java 6 – #6 Clase si obiecte</a></h2>
+<p>Clasele reprezinta principiile de baza ale programarii orientate obiect. Clasele reprezinta notiuni abstracte, povesti, modele (blueprints), ce descriu:</p>
+<ul>
+<li>caracteristicile, atributele unui obiect; reprezinta ceea ce stie sau ce este obiectul;</li>
+<li>ce stie sa faca obiectul, comportamentul acestuia descris de metodele sale;</li>
+</ul>
+<h2>7. <a href="http://www.itcsolutions.eu/2011/01/03/tutorial-java-7-reference-data-type-variables/" target="_blank"> <strong>Tutorial Java – #7 Variabile de tip referinta (only in English)</strong></a></h2>
+<h2>8. <a title="Permanent Link: Tutorial Java – #8 Stiva metodelor si memoria Heap" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/06/tutorial-java-8-stiva-metodelor-si-memoria-heap/" target="_blank">Tutorial Java – #8 Stiva metodelor si memoria Heap</a></h2>
+<p>Pentru a avea o intelegere profunda a progamarii orientate obiect in Java sau in orice alt limbaj orientat obiect (cum ar fi C #),trebuie sa stii cum sunt gestionate lucurile intern de catre procesul Java si de JVM (Java Virtual Machine). Desigur, sintaxa si  implementare principiilor POO (Programare Orientata Obiect) in Java sunt importante, dar vei avea o imagine mult mai clara cu privire la resursele necesare, memorie, performanta, transferul parametrilor, fire de executie si de eliberare a memoriei sau colectare a gunoiului (garbage collection), daca ai iti pui intrebari dincolo de <em>Cum fac asta ?</em> sau <em>Cum scriu asta ?.</em> Intrebari reale trebui sa fie <em>Cum</em> sau <em>De ce se intampla asa ?</em> (desigur, de la un punct, trebuie sa iei lucrurile asa cum sunt si sa mergi mai departe).</p>
+<h2>9. <a title="Permanent Link: Tutorial Java – #9 Managementul memoriei, Garbage Collector si memory leaks" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/10/tutorial-java-9-managementul-memoriei-garbage-collector-si-memory-leaks/" target="_blank">Tutorial Java – #9 Managementul memoriei, Garbage Collector si memory leaks</a></h2>
+<p>O problema importanta de performanta a fost si inca este, dimensiunea spatiului de memorie disponibil si modul de gestiune al acestuia. In ciuda faptului ca astazi tehnologia hardware ofera resurse mari de memorie virtuala, Random Access Memory, dezvoltatorii de software trebuie sa acorde atentie modului in care aplicatiile gestioneaza memoria, deoarece pot fi implementate solutii gresite, care vor bloca procesul sau sistemul de operare, deoarece nu mai este suficienta memorie virtuala.</p>
+<h2>10. <a title="Tutorial Java SCJP – #10 Domeniul de vizibilitate al variabilelor" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/10/tutorial-java-scjp-10-domeniul-de-vizibilitate-al-variabilelor/" target="_blank">Tutorial Java SCJP – #10 Domeniul de vizibilitate al variabilelor</a></h2>
+<p>Multe erori de compilare sunt generate de programatori deoarece nu au o imagine clara cu privire la domeniul de vizibilitate al variabilelor, cat sunt disponibile si când pot fi accesate. Conceptul de domeniu de vizibilitate  descrie viata unei variabile, sau zona de disponibilitate, dupa ce aceasta a fost definita.</p>
+<h2>11. <a title="Tutorial SCJP Java – #11 Cum se utilizeaza String, StringBuilder si StringBuffer" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/17/tutorial-scjp-java-10-cum-se-utilizeaza-string-stringbuilder-si-stringbuffer/" target="_blank">Tutorial SCJP Java – #11 Cum se utilizeaza String, StringBuilder si StringBuffer</a></h2>
+<p>In limbajele de programare, majoritatea tipurilor de date utilizate pentru variabile sunt valorile booleene, valorile numerice si sirurile de caractere (sau vectori de caractere terminati cu ‘\0’). In contrast cu C sau C++, in Java modul de gestiune a sirurilor de caractere este diferit, deoarece:</p>
+<ul>
+<li>in Java fiecare char reprezinta o valoare Unicode pe 16 biti, si nu 1 octet;</li>
+<li>in Java, valorile de tip siruri de caractere sunt gestionate de obiecte String;</li>
+<li>in Java, sintaxa va permite sa utilizati String asemenea unui tip primitiv de date (puteti folosi operatorul = pentru a le initializa)</li>
+<li>in Java, String sunt obiecte imuabile (immutable), in sensul ca odata ce sunt create, ele nu isi pot schimba valoarea.</li>
+</ul>
+<h2>12. <a title="Tutorial SCJP Java – #12 Immutable: String si Integer" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/17/tutorial-scjp-java-12-immutable-string-si-integer/" target="_blank">Tutorial SCJP Java – #12 Immutable: String si Integer</a></h2>
+<p>Obiecte immutable (imuabile) sunt obiecte care nu isi pot schimba valoarea, odata ce acestea sunt create. Obiectul immutable cel mai cunoscut in Java este String. In afara de String, exista si alte obiect imuabile, iar unul dintre acestea este Integer (clasa si nu tipul primitiv), care are un comportament interesant pentru valori intre -128 si 127.</p>
+<h2>13. <a title="Permanent Link: Tutorial Java SCJP – #13 Pachete si modificatori de acces pentru clase" rel="bookmark" href="http://www.itcsolutions.eu/2011/02/23/tutorial-java-scjp-13-pachete-si-modificatori-de-acces-pentru-clase/" target="_blank">Tutorial Java SCJP – #13 Pachete si modificatori de acces pentru clase</a></h2>
+<p>Doua concepte importante ale Programarii Orientate Obiect impun separarea entitatilor (claselor) pe baza functionalitatii sau semnificatiei lor (modularizare) si ascunderea datelor si comportamentului în cadrul unei clase (încapsulare). Pentru a atinge aceste obiective se folosesc clase pentru a defini entitati care au atribute si un comportament (metodele lor). La un nivel superior, pentru o buna organizare a modulelor aplicatiei Java puteti utiliza pachete (packeges) pentru a separa modulele realizate de programatori diferiti sau pentru a grupa clasele în module in functie de utilitate, functie, logica.</p>
+<h2>14. <a title="Permanent Link: Tutorial Java SCJP – #14 Methods and passing variables into methods" rel="bookmark" href="http://www.itcsolutions.eu/2011/03/04/tutorial-java-scjp-14-methods-and-passing-variables-into-methods/" target="_blank">Tutorial Java SCJP – #14 Methods and passing variables into methods</a><span style="font-weight: normal;"> (only in English)</span></h2>
+<p>14.1 <a title="Permanent Link: Tutorial Java SCJP – #14.1 Ce inseamna sa ascunzi (shadow) o variabila" rel="bookmark" href="http://www.itcsolutions.eu/2011/03/04/tutorial-java-scjp-14-1-ce-inseamna-sa-ascunzi-shadow-o-variabila/" target="_blank">Tutorial Java SCJP – #14.1 Ce inseamna sa ascunzi (shadow) o variabila</a><br />
+Conceptul de shadowing se produce atunci cand se defineste o metoda cu parametri de intrare care au nume identice cu variabile statice sau variabile de instanta (atribute).</p>
+<p>14.2 <a title="Permanent Link: Tutorial Java SCJP – # 14.2 Cum se definesc metode cu numar variabile de argumente – var-args" rel="bookmark" href="http://www.itcsolutions.eu/2011/03/04/tutorial-java-scjp-14-2-cum-se-definesc-metode-cu-numar-variabile-de-argumente-var-args/" target="_blank">Tutorial Java SCJP – # 14.2 Cum se definesc metode cu numar variabile de argumente – var-args</a><br />
+Incepand cu Java 5.0, puteti defini metode cu liste variabile de argument (var-args). Aceste metode pot fi utilizate in situatii cand nu este cunoscut numarul exact de argumente. Aceasta posibilitate este, de asemenea, disponibila si in alte limbaje de programare si chiar daca nu este folosit intensiv, este un subiect pentru examenul de SCJP.</p>
+<h2>15. <a title="Tutorial Java SCJP – #15 Clase wrapper pentru tipurile primitive" rel="bookmark" href="http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-15-clase-wrapper-pentru-tipurile-primitive/" target="_blank">Tutorial Java SCJP – #15 Clase wrapper pentru tipurile primitive </a></h2>
+<p>In Java exista 2 categorii importante de tipuri de date: referinte si primitive. De cele mai multe ori, valorile numerice, caracterele si valorile logice sunt utilizate ca primitive, deoarece sunt mai eficiente, ca viteza de procesare, sintaxa si efecte asupra memoriei. In ciuda acestui fapt, exista scenarii (cand folosesti Collections), cand este necesar sa stochezi valori primitive in interiorul unor obiecte. Pentru aceasta nevoie, Java ofera un set de clase folosite la ambalarea (wrap) valorilor primitive intr-un obiect.</p>
+<h2>16. <a title="Tutorial Java SCJP – #16 Constructori" rel="bookmark" href="http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-16-constructori/" target="_blank">Tutorial Java SCJP – #16 Constructori</a></h2>
+<p>Intr-o clasa se pot defini metode, dar exista un tip special de metode care sunt folosite pentru a rezolva o anumita problema, aceea de a construi obiecte. Constructori sunt metode speciale datorita rolului lor si pentru ca au o multime reguli privind declararea si utilizare.</p>
+<h2>17. <a title="Tutorial Java SCJP – #17 Modificatori de acces pentru metode si variable, atribute" rel="bookmark" href="http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-17-modificatori-de-acces-pentru-metode-si-variable-atribute/" target="_blank">Tutorial Java SCJP – #17 Modificatori de acces pentru metode si variable, atribute</a></h2>
+<p>Modificatorii de acces reprezinta modalitati prin care programatorul poate controla (acorda sau restrictioneaza) accesul la metodele si atributele definite intr-o clasa. Un motiv pentru a utiliza acesti modificatori de access este conceptul POO numit incapsulare, care cere ca atributele sa nu poata si accesate (citire/scriere) direct, ci doar prin metode accesor (cele prefixate cu get si set). Un alt motiv este necesitatea de a controla cum este folosita clasa si cum si ce valori ajung sa fie stocate in variabilele de instanta (atribute). De exemplu, daca se implementeaza clasa Persoana care defineste atributul varsta, nu este de dorit ca un alt programator sa poata initializa direct (cu orice valoare) acest atribut, deoarece poate folosi o valoare negativa.</p>
+<h2>18. <a title="Tutorial Java SCJP – # 18 Blocuri de initializare" rel="bookmark" href="http://www.itcsolutions.eu/2011/07/31/tutorial-java-scjp-18-blocuri-de-initializare/" target="_blank">Tutorial Java SCJP – # 18 Blocuri de initializare</a></h2>
+<p>Pentru a face prelucrari si pentru a obtine rezultate este nevoie de date. Si aceste valori de intrare sunt de obicei stocate in variabile statice, variabilele locale (definite în metode) sau variabile de instanta (variabile nonstatice definite în clase). Pentru a initializa o variabila o poti face la definitia sau mai tarziu intr-o metoda (constructor sau nu). In ciuda acestor doua solutii comune, exista o alta cale folosind blocuri de initializare.<br />
+Blocurile de initializarea sunt blocuri de cod definite intre { si }. Din acest punct de vedere, ele seamana cu blocuri/corpuri de metode, dar principala diferenta este ca blocurile de initializare nu au un nume. Ele sunt ca metodele, insa fara antet/header (tip returnat, nume metoda, lista de parametri).</p>
+<h2>19. <a title="Tutorial Java SCJP – # 19 Enumerari de tip enum" rel="bookmark" href="http://www.itcsolutions.eu/2011/07/31/tutorial-java-scjp-19-enumerari-de-tip-enum/" target="_blank">Tutorial Java SCJP – # 19 Enumerari de tip enum</a></h2>
+<p>Incepand cu Java 5.0, framework-ul permite programatorilor sa defineasca un set predefinit de valori, o enumerare sau <strong>enum </strong>(cuvant cheie in Java). In plus, programatorii pot defini variabile care pot lua valori doar din enumerare, iar compilatorul va valida acest lucru prin generarea de erori in situatiile in care programatorul va incerca sa initializeze variabila cu o valoare din afara enumerarii. Enumerarile (enums) pot fi interpretate ca un nou tip de date, pentru care se defineste o restrictie cu privire la valorile sale.
+<div class="social4i" style="height:69px;">
+<div class="social4in" style="height:69px;float: left;">
+<div class="socialicons s4twitter" style="float:left;margin-right: 10px;background:url(&quot;http://goo.gl/zjqd1&quot;) no-repeat;"><a href="http://twitter.com/share" data-url="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" data-counturl="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" data-text="Tutorial Java 6 &#8211; Continut" class="twitter-share-button" data-count="vertical" data-via=""></a></div>
+<div class="socialicons s4fblike" style="float:left;margin-right: 10px;">
+<div id="fb-root"></div>
+<p><fb:like href="http%3A%2F%2Fwww.itcsolutions.eu%2F2010%2F12%2F21%2Ftutorial-java-6-continut%2F" send="false" layout="box_count" width="55" height="62" show_faces="false" font=""></fb:like></div>
+<div class="socialicons s4plusone" style="float:left;margin-right: 10px;"><g:plusone size="tall" href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/" count="true"></g:plusone></div>
+<div class="socialicons s4fbshare" style="position: relative;height: 61px;width:61px;background:url(&quot;http://goo.gl/qt6Vu&quot;) no-repeat;float:left;margin-right: 10px;">
+<div class="s4ifbshare" style="position: absolute; bottom: 0pt;"><a name="fb_share" type="box_count" share_url="http%3A%2F%2Fwww.itcsolutions.eu%2F2010%2F12%2F21%2Ftutorial-java-6-continut%2F" href="http://www.facebook.com/sharer.php"></a></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+          </div>
+                              <p class="tags"><a href="http://www.itcsolutions.eu/tag/java/" rel="tag">Java</a></p>
+          <div class="clear"></div>
+          
+          <p class="postmetadata alt">
+			<small>
+                This entry was posted on  and is filed under <a href="http://www.itcsolutions.eu/category/programming/java/?lang=ro_ro" title="View all posts in Java" rel="category tag">Java</a>. You can follow any responses to this entry through <a href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/feed/" title="RSS 2.0">RSS 2.0</a>.
+                You can <a href="#respond">leave a response</a>, or <a href="http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-continut/trackback/" rel="trackback">trackback</a> from your own site.                            </small>
+		  </p>
+<br />
+<script type="text/javascript"><!--
+google_ad_client = "pub-8545818972391308";
+/* 468x60, creat 23.11.2009 */
+google_ad_slot = "3607480323";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	   </div>
+    </div>
+	<div id="secondary-tabs">
+      <!-- comments and trackback tabs -->
+    <ul class="menu">
+      <li><a href="#tab-1"><span><span>Comments (0)</span></span></a></li>
+      <li><a href="#tab-2"><span><span>Trackbacks (24)</span></span></a></li>
+    </ul>
+    <!-- /comments and trackback tabs -->
+    <!-- comments -->
+  <div id="tab-1">
+   <ol id="comments">
+      	  <li>No comments yet.</li>
+  	    </ol>
+        
+      <div id="respond">
+      <form action="http://www.itcsolutions.eu/wp-comments-post.php" method="post" id="commentform" name="tcommentform">
+        <div class="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/2010/12/21/tutorial-java-6-continut/#respond" style="display:none;">Cancel Reply</a></div>          	                <div id="author_info">
+            <div class="row">
+              <input type="text" name="author" id="author" class="textfield" value="" size="24" tabindex="1" />
+              <label for="author" class="small">Name (required)</label>
+            </div>
+            <div class="row">
+              <input type="text" name="email" id="email" class="textfield" value="" size="24" tabindex="2" />
+              <label for="email" class="small">E-Mail (required)</label> <em>(will not be published)</em>
+            </div>
+            <div class="row">
+              <input type="text" name="url" id="url" class="textfield" value="" size="24" tabindex="3" />
+              <label for="url" class="small">Website</label>
+            </div>
+  		  </div>
+                  
+        <!-- comment input -->
+        <div class="row">
+        	<textarea name="comment" id="comment" tabindex="4" rows="8" cols="50"></textarea>
+        	        	<input type='hidden' name='comment_post_ID' value='1865' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5ef8806fa2" /></p> 
+        </div>
+        <!-- /comment input -->
+
+        <!-- comment submit and rss -->
+        <div id="submitbox" class="left">
+         <span class="button submit"><a title="Submit Comment" href="javascript:document.tcommentform.submit();"><span><span>Submit Comment</span></span></a></span>
+         <input type="hidden" name="formInput" />
+        </div>
+        <div class="clear"></div>
+      </form>
+    </div>
+          </div>
+  <!-- /comments -->
+
+    <!-- trackbacks -->
+  <div id="tab-2">
+    <ol id="trackbacks">
+      <li id="comment-802"><a href='http://www.itcsolutions.eu/2010/12/21/tutorial-java-6-3-definire-variabile-de-tip-primitiv/' rel='external nofollow' class='url'>Tutorial Java 6 - #3 Definire variabile de tip primitiv | IT&amp;C Solutions</a></li>
+ <li id="comment-817"><a href='http://www.itcsolutions.eu/2010/12/23/tutorial-java-6-2-1-cum-sa-definesti-comentarii-javadoc/' rel='external nofollow' class='url'>Tutorial Java 6 - #2.1 Cum sa definesti comentarii JavaDoc | IT&amp;C Solutions</a></li>
+ <li id="comment-822"><a href='http://www.itcsolutions.eu/2010/12/23/tutorial-java-62-2-how-to-generate-javadoc-in-eclipse-or-netbeans/' rel='external nofollow' class='url'>Tutorial Java 6&ndash;#2.2 How to generate JavaDoc in Eclipse or NetBeans | IT&amp;C Solutions</a></li>
+ <li id="comment-824"><a href='http://www.itcsolutions.eu/2010/12/23/tutorial-java-6-2-2-cum-sa-generezi-javadoc-in-eclipse-sau-netbeans/' rel='external nofollow' class='url'>Tutorial Java 6 - Cum sa generezi JavaDoc in Eclipse sau NetBeans | IT&amp;C Solutions</a></li>
+ <li id="comment-835"><a href='http://www.itcsolutions.eu/2010/12/24/tutorial-java-6-4-vectori/' rel='external nofollow' class='url'>Tutorial Java 6 - #4 Vectori | IT&amp;C Solutions</a></li>
+ <li id="comment-847"><a href='http://www.itcsolutions.eu/2010/12/27/tutorial-java-4-2-cum-se-copiaza-in-java-elementele-unui-vector-in-alt-vector/' rel='external nofollow' class='url'>Tutorial Java - Cum se copiaza elementele unui vector in alt vector | IT&amp;C Solutions</a></li>
+ <li id="comment-852"><a href='http://www.itcsolutions.eu/2010/12/29/tutorial-java-6-4-2-how-to-copy-values-of-an-array-into-another-array/' rel='external nofollow' class='url'>Tutorial Java 6 - How to copy values of an array into another array | IT&amp;C Solutions</a></li>
+ <li id="comment-856"><a href='http://www.itcsolutions.eu/2010/12/24/tutorial-java-4-1-cum-se-adauga-in-java-un-element-nou-la-un-vector-existent/' rel='external nofollow' class='url'>Tutorial Java - #4.1 Cum se adauga in Java un element nou la un vector existent | IT&amp;C Solutions</a></li>
+ <li id="comment-873"><a href='http://www.itcsolutions.eu/2011/01/02/tutorial-java-6-5-structuri-de-control/' rel='external nofollow' class='url'>Tutorial Java 6 - #5 Structuri de control | IT&amp;C Solutions</a></li>
+ <li id="comment-874"><a href='http://www.itcsolutions.eu/2011/01/02/tutorial-java-6-6-clase-si-obiecte/' rel='external nofollow' class='url'>Tutorial Java 6 - #6 Clase si obiecte | IT&amp;C Solutions</a></li>
+ <li id="comment-998"><a href='http://www.itcsolutions.eu/2011/02/06/tutorial-java-8-stiva-metodelor-si-memoria-heap/' rel='external nofollow' class='url'>Tutorial Java - #8 Stiva metodelor si memoria Heap | IT&amp;C Solutions</a></li>
+ <li id="comment-1002"><a href='http://www.itcsolutions.eu/2011/02/10/tutorial-java-9-managementul-memoriei-garbage-collector-si-memory-leaks/' rel='external nofollow' class='url'>Tutorial Java - #9 Managementul memoriei, Garbage Collector si memory leaks | IT&amp;C Solutions</a></li>
+ <li id="comment-1011"><a href='http://www.itcsolutions.eu/2011/02/10/tutorial-java-10-domeniul-de-vizibilitate-al-variabilelor/' rel='external nofollow' class='url'>Tutorial Java - #10 Domeniul de vizibilitate al variabilelor | IT&amp;C Solutions</a></li>
+ <li id="comment-1032"><a href='http://www.itcsolutions.eu/2011/02/17/tutorial-scjp-java-12-immutable-string-si-integer/' rel='external nofollow' class='url'>Tutorial SCJP Java - #12 Immutable: String si Integer | IT&amp;C Solutions</a></li>
+ <li id="comment-1033"><a href='http://www.itcsolutions.eu/2011/02/17/tutorial-scjp-java-10-cum-se-utilizeaza-string-stringbuilder-si-stringbuffer/' rel='external nofollow' class='url'>Tutorial SCJP Java - #11 Cum se utilizeaza String, StringBuilder si StringBuffer | IT&amp;C Solutions</a></li>
+ <li id="comment-1036"><a href='http://www.itcsolutions.eu/2011/02/23/tutorial-java-scjp-13-pachete-si-modificatori-de-acces-pentru-clase/' rel='external nofollow' class='url'>Tutorial Java SCJP - #13 Pachete si modificatori de acces pentru clase | IT&amp;C Solutions</a></li>
+ <li id="comment-1052"><a href='http://www.itcsolutions.eu/2011/03/04/tutorial-java-scjp-14-1-ce-inseamna-sa-ascunzi-shadow-o-variabila/' rel='external nofollow' class='url'>Tutorial Java SCJP - #14.1 Ce inseamna sa ascunzi (shadow) o variabila | IT&amp;C Solutions</a></li>
+ <li id="comment-1116"><a href='http://www.itcsolutions.eu/2011/03/04/tutorial-java-scjp-14-2-cum-se-definesc-metode-cu-numar-variabil-de-argumente-var-args/' rel='external nofollow' class='url'>Java SCJP - Metode cu numar variabile de argumente - var-args | IT&amp;C Solutions</a></li>
+ <li id="comment-1117"><a href='http://www.itcsolutions.eu/2010/12/15/tutorial-java-2-concepte-de-baza/' rel='external nofollow' class='url'>Tutorial Java - #2 Concepte de baza | IT&amp;C Solutions</a></li>
+ <li id="comment-1167"><a href='http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-17-modificatori-de-acces-pentru-metode-si-variable-atribute/' rel='external nofollow' class='url'>Tutorial Java SCJP - Modificatori de acces pentru metode si atribute | IT&amp;C Solutions</a></li>
+ <li id="comment-1172"><a href='http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-16-constructori/' rel='external nofollow' class='url'>Tutorial Java SCJP - Constructori | IT&amp;C Solutions</a></li>
+ <li id="comment-1176"><a href='http://www.itcsolutions.eu/2011/06/12/tutorial-java-scjp-15-clase-wrapper-pentru-tipurile-primitive/' rel='external nofollow' class='url'>Tutorial Java SCJP - Clase Wrapper pentru tipurile primitive | IT&amp;C Solutions</a></li>
+ <li id="comment-1213"><a href='http://www.itcsolutions.eu/2011/07/31/tutorial-java-scjp-18-blocuri-de-initializare/' rel='external nofollow' class='url'>Blocurile de initializarea sunt blocuri de cod definite intre { si }. Din acest punct de vedere, ele seamana cu blocuri/corpuri de metode, dar principala diferenta este ca blocurile de initializare nu au un nume. Ele sunt ca metodele, insa fara antet/head</a></li>
+ <li id="comment-1214"><a href='http://www.itcsolutions.eu/2011/07/31/tutorial-java-scjp-19-enumerari-de-tip-enum/' rel='external nofollow' class='url'>Tutorial Java SCJP - # 19 Enumerari de tip enum | IT&amp;C Solutions</a></li>
+    </ol>
+  </div>
+  <!-- /trackbacks -->
+  
+</div>
+
+   </div>
+
+
+    <!-- mid content -->
+   </div>
+   <!-- /mid -->
+
+   <!-- sidebar -->
+<div id="sidebar">
+ <!-- sidebar 1st container -->
+ <div id="sidebar-wrap1">
+  <!-- sidebar 2nd container -->
+  <div id="sidebar-wrap2">
+     <ul id="sidelist">
+     	
+                 <!-- wp search form -->
+          <div id="searchtab">
+            <div class="inside">
+              <form method="get" id="searchform" action="http://www.itcsolutions.eu/">
+                <input type="text" name="s" id="searchbox" class="searchfield" value="Search" onfocus="if(this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" />
+                 <input type="submit" value="Go" class="searchbutton" />
+              </form>
+            </div>
+          </div>
+         <!-- /wp search form -->
+   <!-- sidebar menu (categories) -->
+ <ul class="nav">
+   	<li  class="cat-item cat-item-167"><a href="http://www.itcsolutions.eu/category/dispozitive/?lang=ro_ro" title="View all posts filed under Dispozitive"><span>Dispozitive</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/dispozitive/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-86"><a href="http://www.itcsolutions.eu/category/multimedia/?lang=ro_ro" title="View all posts filed under Multimedia"><span>Multimedia</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/multimedia/?lang=ro_ro/feed/"></a>
+<ul class='children'>
+	<li  class="cat-item cat-item-156"><a href="http://www.itcsolutions.eu/category/multimedia/audio/?lang=ro_ro" title="View all posts filed under Audio"><span>Audio</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/multimedia/audio/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-139"><a href="http://www.itcsolutions.eu/category/multimedia/flash/?lang=ro_ro" title="View all posts filed under Flash"><span>Flash</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/multimedia/flash/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-158"><a href="http://www.itcsolutions.eu/category/multimedia/flex/?lang=ro_ro" title="View all posts filed under Flex"><span>Flex</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/multimedia/flex/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-87"><a href="http://www.itcsolutions.eu/category/multimedia/photoshop/?lang=ro_ro" title="View all posts filed under Photoshop"><span>Photoshop</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/multimedia/photoshop/?lang=ro_ro/feed/"></a>
+</li>
+</ul>
+</li>
+	<li  class="cat-item cat-item-3"><a href="http://www.itcsolutions.eu/category/office/?lang=ro_ro" title="Techniques of office application use, office application solutions, tips"><span>Office</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/office/?lang=ro_ro/feed/"></a>
+<ul class='children'>
+	<li  class="cat-item cat-item-11"><a href="http://www.itcsolutions.eu/category/office/access2003/?lang=ro_ro" title="Databases use and administration"><span>Access 2003</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/office/access2003/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-154"><a href="http://www.itcsolutions.eu/category/office/excel-2003/?lang=ro_ro" title="View all posts filed under Excel 2003"><span>Excel 2003</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/office/excel-2003/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-164"><a href="http://www.itcsolutions.eu/category/office/excel-2010/?lang=ro_ro" title="View all posts filed under Excel 2010"><span>Excel 2010</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/office/excel-2010/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-84"><a href="http://www.itcsolutions.eu/category/office/vba/?lang=ro_ro" title="Visual Basic for Applications"><span>VBA</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/office/vba/?lang=ro_ro/feed/"></a>
+</li>
+</ul>
+</li>
+	<li  class="cat-item cat-item-31"><a href="http://www.itcsolutions.eu/category/operating-systems/?lang=ro_ro" title="View all posts filed under Operating Systems"><span>Operating Systems</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/?lang=ro_ro/feed/"></a>
+<ul class='children'>
+	<li  class="cat-item cat-item-106"><a href="http://www.itcsolutions.eu/category/operating-systems/google-chrome/?lang=ro_ro" title="View all posts filed under Google Chrome"><span>Google Chrome</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/google-chrome/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-96"><a href="http://www.itcsolutions.eu/category/operating-systems/windows/?lang=ro_ro" title="View all posts filed under Windows"><span>Windows</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/windows/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-188"><a href="http://www.itcsolutions.eu/category/operating-systems/windows-10/?lang=ro_ro" title="View all posts filed under Windows 10"><span>Windows 10</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/windows-10/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-112"><a href="http://www.itcsolutions.eu/category/operating-systems/windows-7/?lang=ro_ro" title="View all posts filed under Windows 7"><span>Windows 7</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/windows-7/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-187"><a href="http://www.itcsolutions.eu/category/operating-systems/windows-8-1/?lang=ro_ro" title="View all posts filed under Windows 8.1"><span>Windows 8.1</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/windows-8-1/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-32"><a href="http://www.itcsolutions.eu/category/operating-systems/windows-vista/?lang=ro_ro" title="View all posts filed under Windows Vista"><span>Windows Vista</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/operating-systems/windows-vista/?lang=ro_ro/feed/"></a>
+</li>
+</ul>
+</li>
+	<li  class="cat-item cat-item-4"><a href="http://www.itcsolutions.eu/category/programming/?lang=ro_ro" title="Programming techniques, solutions, facts, tips"><span>Programming</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/?lang=ro_ro/feed/"></a>
+<ul class='children'>
+	<li  class="cat-item cat-item-169"><a href="http://www.itcsolutions.eu/category/programming/android/?lang=ro_ro" title="View all posts filed under Android"><span>Android</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/android/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-9"><a href="http://www.itcsolutions.eu/category/programming/aspnet/?lang=ro_ro" title="ASP.NET programming"><span>ASP.NET</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/aspnet/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-140"><a href="http://www.itcsolutions.eu/category/programming/assembler-8086/?lang=ro_ro" title="View all posts filed under Assembler 8086"><span>Assembler 8086</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/assembler-8086/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-6"><a href="http://www.itcsolutions.eu/category/programming/c-sharp/?lang=ro_ro" title="C sharp (C#) programming"><span>C sharp (C#)</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/c-sharp/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-5"><a href="http://www.itcsolutions.eu/category/programming/c/?lang=ro_ro" title="C++ language programming"><span>C++</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/c/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-72"><a href="http://www.itcsolutions.eu/category/programming/css-programming/?lang=ro_ro" title="View all posts filed under CSS"><span>CSS</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/css-programming/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-113"><a href="http://www.itcsolutions.eu/category/programming/data-structures/?lang=ro_ro" title="Data structures implemented in C/C++"><span>Data Structures</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/data-structures/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-111"><a href="http://www.itcsolutions.eu/category/programming/html-programming/?lang=ro_ro" title="View all posts filed under HTML"><span>HTML</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/html-programming/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-152"><a href="http://www.itcsolutions.eu/category/programming/j2me/?lang=ro_ro" title="Java MicroEdition for mobile devices"><span>J2ME</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/j2me/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-10"><a href="http://www.itcsolutions.eu/category/programming/java/?lang=ro_ro" title="Java language programming"><span>Java</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/java/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-8"><a href="http://www.itcsolutions.eu/category/programming/visual-basic/?lang=ro_ro" title="Visual Basic programming"><span>VB.NET</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/visual-basic/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-135"><a href="http://www.itcsolutions.eu/category/programming/visual-studio-2008/?lang=ro_ro" title="IDE settings and tips."><span>Visual Studio 2008</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/visual-studio-2008/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-153"><a href="http://www.itcsolutions.eu/category/programming/visual-studio-2010/?lang=ro_ro" title="View all posts filed under Visual Studio 2010"><span>Visual Studio 2010</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/visual-studio-2010/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-186"><a href="http://www.itcsolutions.eu/category/programming/visual-studio-2013/?lang=ro_ro" title="View all posts filed under Visual Studio 2013"><span>Visual Studio 2013</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/visual-studio-2013/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-52"><a href="http://www.itcsolutions.eu/category/programming/windows-mobile/?lang=ro_ro" title="View all posts filed under Windows Mobile"><span>Windows Mobile</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/programming/windows-mobile/?lang=ro_ro/feed/"></a>
+</li>
+</ul>
+</li>
+	<li  class="cat-item cat-item-7"><a href="http://www.itcsolutions.eu/category/security/?lang=ro_ro" title="IT&amp;C Security "><span>Security</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/security/?lang=ro_ro/feed/"></a>
+</li>
+	<li  class="cat-item cat-item-1"><a href="http://www.itcsolutions.eu/category/uncategorized/?lang=ro_ro" title="View all posts filed under Uncategorized"><span>Uncategorized</span></a><a class="rss tip" href="http://www.itcsolutions.eu/category/uncategorized/?lang=ro_ro/feed/"></a>
+</li>
+   <li class="current-cat" ><a href='http://www.itcsolutions.eu/?lang=ro_ro' title='Posts selected in romanian'> <img src='http://www.itcsolutions.eu/wp-content/themes/fusion/images/flags/ro_ro.png' alt='' /> in romanian</a></li><li><a href='http://www.itcsolutions.eu/?lang=en_us' title='Posts selected in english'> <img src='http://www.itcsolutions.eu/wp-content/themes/fusion/images/flags/en_us.png' alt='' /> in english</a></li>  </ul>
+  <!-- /sidebar menu -->
+ 		<li><div id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="title">Recent Posts</h2>		<ul>
+				<li><a href="http://www.itcsolutions.eu/2015/07/30/how-to-install-windows-10/" title="How to install Windows 10 earlier">How to install Windows 10 earlier</a></li>
+				<li><a href="http://www.itcsolutions.eu/2014/04/09/windows-8-1-update-1-available/" title="Windows 8.1 Update 1 available">Windows 8.1 Update 1 available</a></li>
+				<li><a href="http://www.itcsolutions.eu/2014/01/07/cum-se-scrie-si-se-ruleaza-cel-mai-simplu-program-c-in-visual-studio-2013/" title="Cum se scrie si se ruleaza cel mai simplu program C in Visual Studio 2013">Cum se scrie si se ruleaza cel mai simplu program C in Visual Studio 2013</a></li>
+				<li><a href="http://www.itcsolutions.eu/2014/01/06/cum-sa-deschizi-un-proiect-cc-nou-in-visual-studio-2013/" title="Cum sa deschizi un proiect C/C++ nou in Visual Studio 2013">Cum sa deschizi un proiect C/C++ nou in Visual Studio 2013</a></li>
+				<li><a href="http://www.itcsolutions.eu/2012/03/09/utilizarea-sirurilor-de-caractere-in-limbajul-de-programare-c/" title="Utilizarea sirurilor de caractere in limbajul de programare C++">Utilizarea sirurilor de caractere in limbajul de programare C++</a></li>
+				</ul>
+		</div></li><li><div id="text-2" class="widget widget_text"><h2 class="title">Share this blog</h2>			<div class="textwidget"><!-- AddThis Button BEGIN -->
+<div><div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4b7c1cca62e182c8" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_myspace"></a>
+<a class="addthis_button_google"></a>
+<a class="addthis_button_twitter"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b7c1cca62e182c8"></script></div>
+<!-- AddThis Button END -->
+</div>
+		</div></li><li><div id="linkcat-23" class="widget widget_links"><h2 class="title">Friends</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://dir.blogflux.com" rel="friend" title="Blog Directory by Blog Flux" target="_blank">Blog Directory by Blog Flux</a></li>
+<li><a href="http://www.blogarama.com/" rel="friend" title="blogarama &#8211; the blog directory" target="_blank">blogarama.com</a></li>
+<li><a href="http://www.blogs-collection.com/" rel="friend" target="_blank">Blogs Directory</a></li>
+<li><a href="http://www.cursbnr.ro/" rel="friend colleague" target="_blank">Curs BNR</a></li>
+<li><a href="http://daniel.milodin.com/" target="_blank">Daniel Milodin</a></li>
+<li><a href="http://www.o2vision.eu" rel="friend colleague" target="_blank">Oxygen Vision</a></li>
+
+	</ul>
+</div></li>
+<li><div id="linkcat-22" class="widget widget_links"><h2 class="title">IT&amp;C Security</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.ism.ase.ro" rel="colleague" target="_blank">IT&amp;C Security Master</a></li>
+<li><a href="http://www.secitc.eu" rel="colleague" target="_blank">Security for Information Technology and Communication SECITC</a></li>
+
+	</ul>
+</div></li>
+<li><div id="wpsb" class="widget wpsb_opt_in"><h2 class="title">IT&C Solutions Newsletter</h2><a name="wpsbw"></a><div class="widget module"><form action="#wpsbw" method="post">
+<p class="wpsb_form_label">E-mail:<br /> <input type="text" name="wpsb_email" id="wpsb_email" class="wpsb_form_txt" /></p>
+<script type="text/javascript">
+	//<![CDATA[	
+		function wpsb_toggle_custom_fields (state) {
+			for (i=2; i<16; i++) {
+				if (obj = document.getElementById('wpsb_fld_'+i)) {
+					obj.disabled = !state;
+					obj.readOnly = !state;
+				}
+			}
+		}
+	//]]>
+	</script>
+	<p class="wpsb_form_label"><input type="radio" name="wpsb_radio_option" id="wpsb_radio_option1" onclick="wpsb_toggle_custom_fields(1)" class="wpsb_form_radio" value="wpsb_radio_in" checked="checked" /> Subscribe<br/><input type="radio" name="wpsb_radio_option" id="wpsb_radio_option2" onclick="wpsb_toggle_custom_fields(0)" class="wpsb_form_radio" value="wpsb_radio_out" /> Unsubscribe</p><p class="wpsb_form_label"><input type="submit" value="Submit" class="wpsb_form_btn" /></p>
+</form>
+<!-- Made by www.Sendblaster.com Newsletter Software Opt-in -->
+</div></div></li><li><div id="archives-2" class="widget widget_archive"><h2 class="title">Archives</h2>		<ul>
+			<li><a href='http://www.itcsolutions.eu/2015/07/' title='July 2015'>July 2015</a>&nbsp;(1)</li>
+	<li><a href='http://www.itcsolutions.eu/2014/04/' title='April 2014'>April 2014</a>&nbsp;(1)</li>
+	<li><a href='http://www.itcsolutions.eu/2014/01/' title='January 2014'>January 2014</a>&nbsp;(2)</li>
+	<li><a href='http://www.itcsolutions.eu/2012/03/' title='March 2012'>March 2012</a>&nbsp;(1)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/10/' title='October 2011'>October 2011</a>&nbsp;(3)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/09/' title='September 2011'>September 2011</a>&nbsp;(6)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/08/' title='August 2011'>August 2011</a>&nbsp;(14)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/07/' title='July 2011'>July 2011</a>&nbsp;(6)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/06/' title='June 2011'>June 2011</a>&nbsp;(8)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/05/' title='May 2011'>May 2011</a>&nbsp;(1)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/04/' title='April 2011'>April 2011</a>&nbsp;(6)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/03/' title='March 2011'>March 2011</a>&nbsp;(9)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/02/' title='February 2011'>February 2011</a>&nbsp;(17)</li>
+	<li><a href='http://www.itcsolutions.eu/2011/01/' title='January 2011'>January 2011</a>&nbsp;(6)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/12/' title='December 2010'>December 2010</a>&nbsp;(20)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/11/' title='November 2010'>November 2010</a>&nbsp;(20)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/09/' title='September 2010'>September 2010</a>&nbsp;(5)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/06/' title='June 2010'>June 2010</a>&nbsp;(4)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/04/' title='April 2010'>April 2010</a>&nbsp;(1)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/03/' title='March 2010'>March 2010</a>&nbsp;(16)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/02/' title='February 2010'>February 2010</a>&nbsp;(14)</li>
+	<li><a href='http://www.itcsolutions.eu/2010/01/' title='January 2010'>January 2010</a>&nbsp;(6)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/12/' title='December 2009'>December 2009</a>&nbsp;(5)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/11/' title='November 2009'>November 2009</a>&nbsp;(13)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/10/' title='October 2009'>October 2009</a>&nbsp;(10)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/08/' title='August 2009'>August 2009</a>&nbsp;(2)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/07/' title='July 2009'>July 2009</a>&nbsp;(14)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/06/' title='June 2009'>June 2009</a>&nbsp;(27)</li>
+	<li><a href='http://www.itcsolutions.eu/2009/05/' title='May 2009'>May 2009</a>&nbsp;(10)</li>
+		</ul>
+</div></li><li><div id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="title">Tags</h2><div class="tagcloud"><a href='http://www.itcsolutions.eu/tag/access-2003/' class='tag-link-15' title='8 topics' style='font-size: 10.38pt;'>Access 2003</a>
+<a href='http://www.itcsolutions.eu/tag/android/' class='tag-link-169' title='17 topics' style='font-size: 14.72pt;'>Android</a>
+<a href='http://www.itcsolutions.eu/tag/aplicatie/' class='tag-link-50' title='12 topics' style='font-size: 12.62pt;'>Aplicatie</a>
+<a href='http://www.itcsolutions.eu/tag/aspnet/' class='tag-link-9' title='10 topics' style='font-size: 11.64pt;'>ASP.NET</a>
+<a href='http://www.itcsolutions.eu/tag/assembler/' class='tag-link-141' title='8 topics' style='font-size: 10.38pt;'>Assembler</a>
+<a href='http://www.itcsolutions.eu/tag/baza-de-date/' class='tag-link-26' title='13 topics' style='font-size: 13.18pt;'>Baza de date</a>
+<a href='http://www.itcsolutions.eu/tag/c/' class='tag-link-5' title='26 topics' style='font-size: 17.1pt;'>C++</a>
+<a href='http://www.itcsolutions.eu/tag/camp/' class='tag-link-65' title='6 topics' style='font-size: 8.98pt;'>Camp</a>
+<a href='http://www.itcsolutions.eu/tag/clasa-de-obiecte/' class='tag-link-44' title='11 topics' style='font-size: 12.2pt;'>Clasa de obiecte</a>
+<a href='http://www.itcsolutions.eu/tag/cod-sursa/' class='tag-link-58' title='27 topics' style='font-size: 17.38pt;'>Cod sursa</a>
+<a href='http://www.itcsolutions.eu/tag/creare/' class='tag-link-24' title='12 topics' style='font-size: 12.62pt;'>Creare</a>
+<a href='http://www.itcsolutions.eu/tag/data-structures/' class='tag-link-113' title='8 topics' style='font-size: 10.38pt;'>Data Structures</a>
+<a href='http://www.itcsolutions.eu/tag/date/' class='tag-link-47' title='14 topics' style='font-size: 13.6pt;'>Date</a>
+<a href='http://www.itcsolutions.eu/tag/definire/' class='tag-link-38' title='20 topics' style='font-size: 15.56pt;'>Definire</a>
+<a href='http://www.itcsolutions.eu/tag/eveniment/' class='tag-link-63' title='11 topics' style='font-size: 12.2pt;'>Eveniment</a>
+<a href='http://www.itcsolutions.eu/tag/excel/' class='tag-link-155' title='15 topics' style='font-size: 13.88pt;'>Excel</a>
+<a href='http://www.itcsolutions.eu/tag/expresie/' class='tag-link-45' title='7 topics' style='font-size: 9.68pt;'>Expresie</a>
+<a href='http://www.itcsolutions.eu/tag/flash/' class='tag-link-139' title='8 topics' style='font-size: 10.38pt;'>Flash</a>
+<a href='http://www.itcsolutions.eu/tag/handler/' class='tag-link-66' title='8 topics' style='font-size: 10.38pt;'>Handler</a>
+<a href='http://www.itcsolutions.eu/tag/heap/' class='tag-link-114' title='9 topics' style='font-size: 11.08pt;'>Heap</a>
+<a href='http://www.itcsolutions.eu/tag/intel-8086/' class='tag-link-142' title='8 topics' style='font-size: 10.38pt;'>Intel 8086</a>
+<a href='http://www.itcsolutions.eu/tag/j2me/' class='tag-link-152' title='15 topics' style='font-size: 13.88pt;'>J2ME</a>
+<a href='http://www.itcsolutions.eu/tag/java/' class='tag-link-10' title='59 topics' style='font-size: 22pt;'>Java</a>
+<a href='http://www.itcsolutions.eu/tag/limbaj-de-programare/' class='tag-link-76' title='12 topics' style='font-size: 12.62pt;'>Limbaj de programare</a>
+<a href='http://www.itcsolutions.eu/tag/masiv/' class='tag-link-42' title='6 topics' style='font-size: 8.98pt;'>Masiv</a>
+<a href='http://www.itcsolutions.eu/tag/memorie/' class='tag-link-41' title='12 topics' style='font-size: 12.62pt;'>Memorie</a>
+<a href='http://www.itcsolutions.eu/tag/metoda/' class='tag-link-61' title='5 topics' style='font-size: 8pt;'>Metoda</a>
+<a href='http://www.itcsolutions.eu/tag/multimedia/' class='tag-link-86' title='8 topics' style='font-size: 10.38pt;'>Multimedia</a>
+<a href='http://www.itcsolutions.eu/tag/obiect/' class='tag-link-43' title='9 topics' style='font-size: 11.08pt;'>Obiect</a>
+<a href='http://www.itcsolutions.eu/tag/office/' class='tag-link-3' title='14 topics' style='font-size: 13.6pt;'>Office</a>
+<a href='http://www.itcsolutions.eu/tag/photoshop/' class='tag-link-87' title='8 topics' style='font-size: 10.38pt;'>Photoshop</a>
+<a href='http://www.itcsolutions.eu/tag/pointer/' class='tag-link-74' title='8 topics' style='font-size: 10.38pt;'>Pointer</a>
+<a href='http://www.itcsolutions.eu/tag/procedura/' class='tag-link-64' title='9 topics' style='font-size: 11.08pt;'>Procedura</a>
+<a href='http://www.itcsolutions.eu/tag/referire/' class='tag-link-39' title='12 topics' style='font-size: 12.62pt;'>Referire</a>
+<a href='http://www.itcsolutions.eu/tag/structura/' class='tag-link-27' title='26 topics' style='font-size: 17.1pt;'>Structura</a>
+<a href='http://www.itcsolutions.eu/tag/tabel/' class='tag-link-16' title='9 topics' style='font-size: 11.08pt;'>Tabel</a>
+<a href='http://www.itcsolutions.eu/tag/tip-de-date/' class='tag-link-25' title='11 topics' style='font-size: 12.2pt;'>Tip de date</a>
+<a href='http://www.itcsolutions.eu/tag/tutorial/' class='tag-link-180' title='16 topics' style='font-size: 14.3pt;'>Tutorial</a>
+<a href='http://www.itcsolutions.eu/tag/variabila/' class='tag-link-40' title='12 topics' style='font-size: 12.62pt;'>Variabila</a>
+<a href='http://www.itcsolutions.eu/tag/vbnet/' class='tag-link-33' title='32 topics' style='font-size: 18.36pt;'>VB.NET</a>
+<a href='http://www.itcsolutions.eu/tag/visual-studio/' class='tag-link-34' title='19 topics' style='font-size: 15.28pt;'>Visual Studio</a>
+<a href='http://www.itcsolutions.eu/tag/web/' class='tag-link-70' title='21 topics' style='font-size: 15.84pt;'>Web</a>
+<a href='http://www.itcsolutions.eu/tag/windows/' class='tag-link-96' title='17 topics' style='font-size: 14.72pt;'>Windows</a>
+<a href='http://www.itcsolutions.eu/tag/windows-7/' class='tag-link-112' title='12 topics' style='font-size: 12.62pt;'>Windows 7</a>
+<a href='http://www.itcsolutions.eu/tag/vista/' class='tag-link-30' title='10 topics' style='font-size: 11.64pt;'>Windows Vista</a></div>
+</div></li><li><div id="meta-2" class="widget widget_meta"><h2 class="title">Meta</h2>			<ul>
+						<li><a href="http://www.itcsolutions.eu/wp-login.php">Log in</a></li>
+			<li><a href="http://www.itcsolutions.eu/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.itcsolutions.eu/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</div></li>     </ul>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-8545818972391308";
+/* 250x250, creat 23.11.2009 */
+google_ad_slot = "6626787744";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+  </div>
+  <!-- /sidebar 2nd container -->
+ </div>
+ <!-- /sidebar 1st container -->
+</div>
+<!-- /sidebar -->
+
+  </div>
+  <!-- /side wrap -->
+ </div>
+ <!-- /mid column wrap -->
+</div>
+<!-- /main wrapper -->
+
+<!-- clear main & sidebar sections -->
+<div class="clearcontent"></div>
+<!-- /clear main & sidebar sections -->
+
+ 
+<!-- footer -->
+ <div id="footer">
+
+   
+   <!-- please do not remove this. respect the authors :) -->
+   <p>
+    Fusion theme by <a href="http://digitalnature.ro/projects/fusion">digitalnature</a> | powered by <a href="http://wordpress.org/">WordPress</a>    <br />
+   <a class="rss" href="http://www.itcsolutions.eu/feed/">Entries (RSS)</a> and <a href="http://www.itcsolutions.eu/comments/feed/">Comments (RSS)</a> <a href="javascript:void(0);" id="toplink">^</a>
+   <!-- 52 queries. 0.203 seconds. -->
+   </p>
+ </div>
+ <!-- /footer -->
+   <div id="layoutcontrol">
+   <a href="javascript:void(0);" class="setFont" title="Increase/Decrease text size"><span>SetTextSize</span></a>
+   <a href="javascript:void(0);" class="setLiquid" title="Switch between full and fixed width"><span>SetPageWidth</span></a>
+ </div>
+ </div>
+<!-- /page -->
+
+</div>
+</div>
+<!-- /page wrappers -->
+
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9065880-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
