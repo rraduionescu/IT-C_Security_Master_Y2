@@ -1,1 +1,0 @@
-This is a secret message. It will be encrypted with the AES key, then the encrypted message, encrypted AES key and encrypted AES key hash will be sent to destination.

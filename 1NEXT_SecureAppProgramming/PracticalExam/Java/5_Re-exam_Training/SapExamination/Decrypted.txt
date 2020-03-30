@@ -1,11 +1,0 @@
-This is a secret message. It will be encrypted with the AES key, then the encrypted message, encrypted AES key and encrypted AES key hash will be sent to destination.
-
-
-
-
-
-
-
-
-
-ome text added so this sample will have a longer length than before.s length is ok for the purpose of this example.
