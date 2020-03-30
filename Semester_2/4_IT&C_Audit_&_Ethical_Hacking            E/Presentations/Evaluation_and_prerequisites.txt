@@ -1,0 +1,17 @@
+Course evaluation
+ - 60% - final exam (quiz based on presented concepts)
+ - 40% - activity during labs and courses
+	- 5% assignment on Saturday		DONE  5p
+	- 5% assignment on Sunday		DONE  5p
+	- 10% a short quiz 			---- 10p
+		on April 25 laboratory
+		   (in the morning)
+	- 20% CTF challenge			---- 20p
+		on April 25
+
+
+Requirements:
+	+ a C/C++ dev environment with an IDE of your choice (VS Code + MingW, VS 2019 Community,
+	  Eclipse for C/C++ with MingW, gcc + any IDE on Linux)
+	+ a VM with Kali Linux (Oracle Virtual Box + Kali Linux image- https://www.kali.org/downloads/
+	  or https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
