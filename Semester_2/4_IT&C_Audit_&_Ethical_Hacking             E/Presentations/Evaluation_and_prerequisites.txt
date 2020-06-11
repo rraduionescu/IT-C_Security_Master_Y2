@@ -3,10 +3,10 @@ Course evaluation
  - 40% - activity during labs and courses
 	- 5% assignment on Saturday		DONE  5p
 	- 5% assignment on Sunday		DONE  5p
-	- 10% a short quiz 			---- 10p
+	- 10% a short quiz 			XXXX 10p
 		on April 25 laboratory
 		   (in the morning)
-	- 20% CTF challenge			---- 20p
+	- 20% CTF challenge			XXXX 20p
 		on April 25
 
 
