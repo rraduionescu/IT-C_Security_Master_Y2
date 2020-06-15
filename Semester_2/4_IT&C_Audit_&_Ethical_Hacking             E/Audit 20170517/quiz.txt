@@ -1,0 +1,54 @@
+Q:	What are proxy chains?
+A:	They allow rerouting the network traffic through multiple Internet nodes(proxy). Is slow - efficient for small data transfers.
+
+Q:	What is a valid countermeasure to limit injection attacks?
+A:	Validate the input on the server side;
+	//Separate data from queries;
+	//Use an API to work with your database;
+	//Don't concatenate queries.
+
+Q:	What are the countermeasures against Broken Authentication?
+A:	Multi-factor authentication;
+	Password complexity - do not use default credentials;
+	Password checking from the most used passwords;
+	Limit the number of failed login attempts.
+	
+Q: 	What operating system is similar to KALI linux ?
+A: 	BackBox
+
+Q: 	What is used for preserving anonimity?
+A: 	ProxyChains - used to change the IP of the attacker
+
+Q: 	What is WhatWeb?
+A:	It can identify all sorts of information about a live website, including:
+		//Platform
+		//CMS platform
+		//Type of script
+		//Google Analytics
+		//Web server Platform
+		//IP address, Country
+
+Q: 	WHat is nmap?
+A: 	It's a port scanner, used to audit the security of each open port on the target and for discovering information about machines on a network or the internet
+
+Q: 	What is DirBuster / Dirb - Directory buster ?
+A: 	Dirb is used to find the hidden directories of a website.It's used to look for vulnerable content
+
+Q: 	What is a similar tool to OWASP-ZAP?
+A:	OWASP-ZAP is similar with BurpSuite
+
+Q:	What are the two primary forms of password guessing? )Asta posibil sa fi fost gresit formulata din ce imi amintesc)
+	 A.  Password Replay 	
+	 B.  Password Repeat 	
+	 C.  Dictionary attack
+A:  Dictionary attack, Brute force attack, rainbow table attack, guessing , spidering
+ 
+Q: 	What are the primary characteristics regarding password strength?
+A: 	Length , Complexity , Unpredactibility
+
+Q: 	What techniques are DDoS attacks using against targets?
+A: 	Amplify and reflect techniques
+	- exploits protocols vulnerabilities
+	- tricks legit clients to connect in the same time to the DoS target
+	
+Q: Some question regarding differences between OWASP Top 10 2013-2017

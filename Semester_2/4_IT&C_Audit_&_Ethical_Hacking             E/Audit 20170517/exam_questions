@@ -1,0 +1,49 @@
+Audit
+1. In the risk based audit approach, compliance testing involves:
+2. The audit standard is defined by:
+3. Computer assisted auditing techniques include:
+4. Risks associated to internet banking:
+5. Number of maturity levels of software processes, according top the Capability Maturity Model:
+Pentesting:
+6. What Vishing represents
+  Voice phishing is a form of criminal phone fraud, using social engineering over the telephone system to gain access to private personal and financial information for the purpose of financial reward. It is sometimes referred to as 'vishing'[1][2] - a portmanteau of "voice" and phishing.
+  Landline telephone services have traditionally been trustworthy; terminated in physical locations known to the telephone company, and associated with a bill-payer. Now however, vishing fraudsters often use modern Voice over IP (VoIP) features such as caller ID spoofing and automated systems (IVR) to make it difficult for legal authorities to monitor, trace or block. Voice phishing is typically used to steal credit card numbers or other information used in identity theft schemes from individuals.
+  Computer systems can create audio that sounds like a particular person speaking (deepfake), giving the impression that a trusted individual is making a request.
+7. What is the benefit of Pen Testing?
+  manage vulnerabilities; avoid the cost of network downtime; minimize client-side attacks; evaluate security investment.
+8. In cryptanalysis and computer security, password cracking is the process of?
+  The process of attempting to gain unauthorized access to a system by using common passwords or algorithms that guess the password.
+  The art of obtaining the correct password that gives access to a system protected by an authentication method.
+9. The process of social engineering is composed by?
+  Gather Information; Plan Attack; Acquire tools; Attack; Use acquired knowledge
+10. Which affirmation of Footprinting is not correct in the context of pentesting?
+  Footprinting – information gathering, pre-analysis (in digital and real world)
+11. What is the most effective countermeasure for preventing social engineering attacks?
+  Training for employees; Security protocols (policies and procedures); Periodically tests;
+12. What is an ethical hacker?
+  Ethical hackers are responsible for examining internal servers and systems to discover any possible vulnerabilities to external cyber attacks.
+13. The most used software tools for password cracking are?
+   CUPP + Mentalist
+   Burp Suite + Firefox
+14. What is pentesting?
+   Penetration tests are performed using manual or automated tools to detect potential points of exposure.
+   Information about any vulnerability successfully exploited are presented to the owner of that system.
+15. What are the most common techniques used for password cracking?
+   Dictionary attack
+   Brute force attack
+   Rainbow table attack  Guess
+   Spidering
+16. The most used techniques for social engineering attacks are?
+   Familiarity exploit
+   Intimidating circumstances  Phishing and vishing
+   Tailgating
+   Exploiting human curiosity  Exploiting human greed
+   Pretexting
+   Baiting
+   Quid pro quo
+17. If you want to preserve your anonymity in Internet and hide the destination URL from your ISP or the public wifi admin you will use?
+  VPNs, Proxys, Proxychains, Linux distributions, Tor Network, MAC Changer, Live USB OS, DNS Leaking, Search Enginge, Canary cookies & tokens
+18. Which of the next terms is NOT a hacker type?
+  Hacker types: White/Grey/Black hat; Script kiddie; Neophyte ("newbie", or "noob"); Hacktivist; Nation state
+19. Which of the next key terms is not directly associated with pentesting (analysis, remote access and control)?
+20. What problem occurs when the application takes input data that cannot be trusted and send it back to the client browser without validating and sanitizing it properly?
